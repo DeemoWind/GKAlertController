@@ -19,6 +19,7 @@
 		1807BB691C5F000F000F0029 /* 屏幕快照 2016-02-01 上午10.52.47.png in Resources */ = {isa = PBXBuildFile; fileRef = 1807BB681C5F000F000F0029 /* 屏幕快照 2016-02-01 上午10.52.47.png */; };
 		1807BB6B1C5F0062000F0029 /* 手机界面图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1807BB6A1C5F0062000F0029 /* 手机界面图.png */; };
 		1807BB6E1C6072EB000F0029 /* GKBlurPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */; };
+		1807BB711C609797000F0029 /* GKPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807BB701C609797000F0029 /* GKPresentationAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		1807BB6A1C5F0062000F0029 /* 手机界面图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手机界面图.png"; sourceTree = "<group>"; };
 		1807BB6C1C6072EB000F0029 /* GKBlurPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBlurPresentationController.h; sourceTree = "<group>"; };
 		1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBlurPresentationController.m; sourceTree = "<group>"; };
+		1807BB6F1C609797000F0029 /* GKPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPresentationAnimation.h; sourceTree = "<group>"; };
+		1807BB701C609797000F0029 /* GKPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPresentationAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				1807BB661C5EF5E6000F0029 /* GKAlertViewController.m */,
 				1807BB6C1C6072EB000F0029 /* GKBlurPresentationController.h */,
 				1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */,
+				1807BB6F1C609797000F0029 /* GKPresentationAnimation.h */,
+				1807BB701C609797000F0029 /* GKPresentationAnimation.m */,
 			);
 			path = GKAlert;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			files = (
 				1807BB391C5EF581000F0029 /* ViewController.m in Sources */,
 				1807BB361C5EF581000F0029 /* AppDelegate.m in Sources */,
+				1807BB711C609797000F0029 /* GKPresentationAnimation.m in Sources */,
 				1807BB331C5EF581000F0029 /* main.m in Sources */,
 				1807BB671C5EF5E6000F0029 /* GKAlertViewController.m in Sources */,
 				1807BB6E1C6072EB000F0029 /* GKBlurPresentationController.m in Sources */,
@@ -527,6 +533,7 @@
 				1807BB5D1C5EF581000F0029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1807BB5E1C5EF581000F0029 /* Build configuration list for PBXNativeTarget "GKAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +542,7 @@
 				1807BB601C5EF581000F0029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1807BB611C5EF581000F0029 /* Build configuration list for PBXNativeTarget "GKAlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +551,7 @@
 				1807BB631C5EF581000F0029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

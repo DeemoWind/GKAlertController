@@ -42,19 +42,27 @@
 //    
 //    [self.view addSubview:visualEffectView];
 
-    GKAlertViewController * gkAlert = [GKAlertViewController alertControllerWithTitle:@"haha" message:@"hah" preferredStyle:UIAlertControllerStyleActionSheet];
+//    GKAlertViewController * gkAlert = [GKAlertViewController alertControllerWithTitle:@"haha" message:@"hah" preferredStyle:UIAlertControllerStyleActionSheet];
+//    
+//    [gkAlert addAction:[UIAlertAction actionWithTitle:@"test1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+////        [visualEffectView removeFromSuperview];
+//    }]];
+//    
+//    [gkAlert addAction:[UIAlertAction actionWithTitle:@"TEST2" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+////        [visualEffectView removeFromSuperview];
+//    }]];
+//    
+//    [self presentViewController:gkAlert animated:YES completion:^{
+//        
+//    }];
     
-    [gkAlert addAction:[UIAlertAction actionWithTitle:@"test1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//        [visualEffectView removeFromSuperview];
-    }]];
-    
-    [gkAlert addAction:[UIAlertAction actionWithTitle:@"TEST2" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-//        [visualEffectView removeFromSuperview];
-    }]];
-    
-    [self presentViewController:gkAlert animated:YES completion:^{
-        
+    GKAlertViewController * alertVC = [[GKAlertViewController alloc] init];
+    NSLog(@"gkAlertViewController -> %@",alertVC);
+    [self presentViewController:alertVC animated:YES completion:^{
+        NSLog(@"viewcontroller -> %@",self);
     }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

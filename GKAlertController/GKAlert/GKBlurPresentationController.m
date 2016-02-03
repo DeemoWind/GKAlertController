@@ -23,12 +23,23 @@
             UIView *view = [[UIView alloc] initWithFrame:self.containerView.bounds];
             view.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5];
             view.alpha = 0.0;
+            
+            UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dealDismissTap:)];
+            [view addGestureRecognizer:tapGesture];
+            
             view;
+            
         });
     }
     return _dimmingView;
 }
 
+#pragma mark dismiss method in dimmingView getter 
+- (void)dealDismissTap:(UITapGestureRecognizer*)tapGestureRecognizer {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 #pragma mark - override presentationTansition metod
 
 - (void)presentationTransitionWillBegin {
@@ -46,7 +57,7 @@
     
     //Fade in the dimming view alongside the transition
     
-    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentedViewController.transitionCoordinator;
+    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentingViewController.transitionCoordinator;
     
     if (transitionCoordinator) {
         [transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
@@ -59,7 +70,9 @@
 }
 
 - (void)presentationTransitionDidEnd:(BOOL)completed {
-    //If the presitation didn't complete, remove the dimming view
+    
+    //The presentation shoulde be completed as normal.
+    //If the presentation didn't complete, remove the dimming view
     if (!completed) {
         [self.dimmingView removeFromSuperview];
     }
@@ -67,10 +80,14 @@
 
 - (void)dismissalTransitionWillBegin {
     //Fade out the dimming view alongside the transition
-    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentedViewController.transitionCoordinator;
+    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentingViewController.transitionCoordinator;
     
     if (transitionCoordinator) {
-        self.dimmingView.alpha = 0.0;
+        [transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+            self.dimmingView.alpha = 0.0;
+        } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+            
+        }];
     }
 }
 
