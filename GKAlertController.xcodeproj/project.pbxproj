@@ -18,8 +18,12 @@
 		1807BB671C5EF5E6000F0029 /* GKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807BB661C5EF5E6000F0029 /* GKAlertViewController.m */; };
 		1807BB691C5F000F000F0029 /* 屏幕快照 2016-02-01 上午10.52.47.png in Resources */ = {isa = PBXBuildFile; fileRef = 1807BB681C5F000F000F0029 /* 屏幕快照 2016-02-01 上午10.52.47.png */; };
 		1807BB6B1C5F0062000F0029 /* 手机界面图.png in Resources */ = {isa = PBXBuildFile; fileRef = 1807BB6A1C5F0062000F0029 /* 手机界面图.png */; };
-		1807BB6E1C6072EB000F0029 /* GKBlurPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */; };
-		1807BB711C609797000F0029 /* GKPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1807BB701C609797000F0029 /* GKPresentationAnimation.m */; };
+		183843151C61EC6B00D98389 /* GKBlurPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183843111C61EC6B00D98389 /* GKBlurPresentationController.m */; };
+		183843161C61EC6B00D98389 /* GKDropDownPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 183843141C61EC6B00D98389 /* GKDropDownPresentationAnimation.m */; };
+		1838431C1C6202E800D98389 /* GKActionSheetPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838431B1C6202E800D98389 /* GKActionSheetPresentationAnimation.m */; };
+		1838431F1C62034F00D98389 /* GKPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838431E1C62034F00D98389 /* GKPresentationAnimation.m */; };
+		18A48AAA1C744FD6007E0855 /* GKLeftSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48AA91C744FD6007E0855 /* GKLeftSideMenuController.m */; };
+		18A48AAD1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A48AAC1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +64,18 @@
 		1807BB661C5EF5E6000F0029 /* GKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKAlertViewController.m; sourceTree = "<group>"; };
 		1807BB681C5F000F000F0029 /* 屏幕快照 2016-02-01 上午10.52.47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2016-02-01 上午10.52.47.png"; sourceTree = "<group>"; };
 		1807BB6A1C5F0062000F0029 /* 手机界面图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手机界面图.png"; sourceTree = "<group>"; };
-		1807BB6C1C6072EB000F0029 /* GKBlurPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBlurPresentationController.h; sourceTree = "<group>"; };
-		1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBlurPresentationController.m; sourceTree = "<group>"; };
-		1807BB6F1C609797000F0029 /* GKPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPresentationAnimation.h; sourceTree = "<group>"; };
-		1807BB701C609797000F0029 /* GKPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPresentationAnimation.m; sourceTree = "<group>"; };
+		183843101C61EC6B00D98389 /* GKBlurPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBlurPresentationController.h; sourceTree = "<group>"; };
+		183843111C61EC6B00D98389 /* GKBlurPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBlurPresentationController.m; sourceTree = "<group>"; };
+		183843131C61EC6B00D98389 /* GKDropDownPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDropDownPresentationAnimation.h; sourceTree = "<group>"; };
+		183843141C61EC6B00D98389 /* GKDropDownPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDropDownPresentationAnimation.m; sourceTree = "<group>"; };
+		1838431A1C6202E800D98389 /* GKActionSheetPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKActionSheetPresentationAnimation.h; sourceTree = "<group>"; };
+		1838431B1C6202E800D98389 /* GKActionSheetPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKActionSheetPresentationAnimation.m; sourceTree = "<group>"; };
+		1838431D1C62034F00D98389 /* GKPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPresentationAnimation.h; sourceTree = "<group>"; };
+		1838431E1C62034F00D98389 /* GKPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPresentationAnimation.m; sourceTree = "<group>"; };
+		18A48AA81C744FD6007E0855 /* GKLeftSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLeftSideMenuController.h; sourceTree = "<group>"; };
+		18A48AA91C744FD6007E0855 /* GKLeftSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKLeftSideMenuController.m; sourceTree = "<group>"; };
+		18A48AAB1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLeftSideMenuPresentationAnimation.h; sourceTree = "<group>"; };
+		18A48AAC1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKLeftSideMenuPresentationAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +173,36 @@
 			children = (
 				1807BB651C5EF5E6000F0029 /* GKAlertViewController.h */,
 				1807BB661C5EF5E6000F0029 /* GKAlertViewController.m */,
-				1807BB6C1C6072EB000F0029 /* GKBlurPresentationController.h */,
-				1807BB6D1C6072EB000F0029 /* GKBlurPresentationController.m */,
-				1807BB6F1C609797000F0029 /* GKPresentationAnimation.h */,
-				1807BB701C609797000F0029 /* GKPresentationAnimation.m */,
+				18A48AA81C744FD6007E0855 /* GKLeftSideMenuController.h */,
+				18A48AA91C744FD6007E0855 /* GKLeftSideMenuController.m */,
+				1838430F1C61EC6B00D98389 /* Presentation */,
+				183843121C61EC6B00D98389 /* PresentationAnimation */,
 			);
 			path = GKAlert;
+			sourceTree = "<group>";
+		};
+		1838430F1C61EC6B00D98389 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				183843101C61EC6B00D98389 /* GKBlurPresentationController.h */,
+				183843111C61EC6B00D98389 /* GKBlurPresentationController.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		183843121C61EC6B00D98389 /* PresentationAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1838431D1C62034F00D98389 /* GKPresentationAnimation.h */,
+				1838431E1C62034F00D98389 /* GKPresentationAnimation.m */,
+				183843131C61EC6B00D98389 /* GKDropDownPresentationAnimation.h */,
+				183843141C61EC6B00D98389 /* GKDropDownPresentationAnimation.m */,
+				1838431A1C6202E800D98389 /* GKActionSheetPresentationAnimation.h */,
+				1838431B1C6202E800D98389 /* GKActionSheetPresentationAnimation.m */,
+				18A48AAB1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.h */,
+				18A48AAC1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.m */,
+			);
+			path = PresentationAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,10 +342,14 @@
 			files = (
 				1807BB391C5EF581000F0029 /* ViewController.m in Sources */,
 				1807BB361C5EF581000F0029 /* AppDelegate.m in Sources */,
-				1807BB711C609797000F0029 /* GKPresentationAnimation.m in Sources */,
+				1838431F1C62034F00D98389 /* GKPresentationAnimation.m in Sources */,
+				18A48AAD1C744FF3007E0855 /* GKLeftSideMenuPresentationAnimation.m in Sources */,
+				183843161C61EC6B00D98389 /* GKDropDownPresentationAnimation.m in Sources */,
 				1807BB331C5EF581000F0029 /* main.m in Sources */,
+				1838431C1C6202E800D98389 /* GKActionSheetPresentationAnimation.m in Sources */,
 				1807BB671C5EF5E6000F0029 /* GKAlertViewController.m in Sources */,
-				1807BB6E1C6072EB000F0029 /* GKBlurPresentationController.m in Sources */,
+				183843151C61EC6B00D98389 /* GKBlurPresentationController.m in Sources */,
+				18A48AAA1C744FD6007E0855 /* GKLeftSideMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

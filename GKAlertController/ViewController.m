@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GKAlertViewController.h"
+#import "GKLeftSideMenuController.h"
 
 
 @interface ViewController ()
@@ -21,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.view addSubview:imageView];
-    imageView.image = [UIImage imageNamed:@"手机界面图"];
+    imageView.image = [UIImage imageNamed:@"屏幕快照 2016-02-01 上午10.52.47"];
     
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(50, 100, 100, 44);
@@ -32,8 +33,22 @@
     [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(alertGKAlertView) forControlEvents:UIControlEventTouchUpInside];
     
+    UIButton * buttonSideMenu = [UIButton buttonWithType:UIButtonTypeCustom];
+    buttonSideMenu.frame = CGRectMake(50, 166, 100, 44);
+    
+    [self.view addSubview:buttonSideMenu];
+    
+    [buttonSideMenu setTitle:@"alertLeftSide" forState:UIControlStateNormal];
+    [buttonSideMenu setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [buttonSideMenu addTarget:self action:@selector(showSideMenuView) forControlEvents:UIControlEventTouchUpInside];
+    
 }
-
+- (void)showSideMenuView {
+    GKLeftSideMenuController * leftVC = [[GKLeftSideMenuController alloc] init];
+    [self presentViewController:leftVC animated:YES completion:^{
+        
+    }];
+}
 - (void)alertGKAlertView {
 //    UIVisualEffect *visualEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
 //    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:visualEffect];
@@ -57,9 +72,7 @@
 //    }];
     
     GKAlertViewController * alertVC = [[GKAlertViewController alloc] init];
-    NSLog(@"gkAlertViewController -> %@",alertVC);
     [self presentViewController:alertVC animated:YES completion:^{
-        NSLog(@"viewcontroller -> %@",self);
     }];
     
     

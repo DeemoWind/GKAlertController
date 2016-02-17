@@ -1,20 +1,20 @@
 //
-//  GKAlertViewController.m
+//  GKLeftSideMenuController.m
 //  GKAlertController
 //
-//  Created by Apple on 16/2/1.
+//  Created by Apple on 16/2/17.
 //  Copyright © 2016年 zhishu. All rights reserved.
 //
 
-#import "GKAlertViewController.h"
+#import "GKLeftSideMenuController.h"
 #import "GKBlurPresentationController.h"
-#import "GKDropDownPresentationAnimation.h"
+#import "GKLeftSideMenuPresentationAnimation.h"
 
-@interface GKAlertViewController ()<GKBlurPresentationFrameDelegate>
+@interface GKLeftSideMenuController ()<GKBlurPresentationFrameDelegate>
 
 @end
 
-@implementation GKAlertViewController
+@implementation GKLeftSideMenuController
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
@@ -75,7 +75,7 @@
             GKBlurPresentationController *presentationVC = [[GKBlurPresentationController alloc] initWithPresentedViewController:presented
                                                                                                         presentingViewController:presenting];
             presentationVC.delegateForFrame = self;
-                                                            
+            
             presentationVC;
         });
     }
@@ -84,25 +84,30 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     if (presented == self) {
-        return [[GKDropDownPresentationAnimation alloc] initWithIsPresenting:YES duration:0.5f];
+        return [[GKLeftSideMenuPresentationAnimation alloc] initWithIsPresenting:YES duration:0.5f];
     }
     return nil;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     if (dismissed == self) {
-        return [[GKDropDownPresentationAnimation alloc] initWithIsPresenting:NO duration:0.5f];
+        return [[GKLeftSideMenuPresentationAnimation alloc] initWithIsPresenting:NO duration:0.5f];
     }
     return nil;
 }
 #pragma mark - GKBlurPresentationFrameDelegate
 - (BOOL)shouldCustomFrameOfPresentatedView {
-    return NO;
+    return YES;
 }
 - (CGRect)frameOfPresentedViewWithContainerView:(UIView *)containerView startingViewController:(UIViewController *)belowViewController {
     CGRect frame = containerView.bounds;
-    frame = CGRectInset(frame, 50.0, 250.0);
-    return frame;
+    CGFloat x = frame.origin.x;
+    CGFloat y = frame.origin.y;
+    CGFloat width = frame.size.width;
+    CGFloat height = frame.size.height;
+    
+    width *= 0.8;
+    
+    return CGRectMake(x, y, width, height);
 }
-
 @end

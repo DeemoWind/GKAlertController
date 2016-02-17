@@ -6,27 +6,11 @@
 //  Copyright © 2016年 zhishu. All rights reserved.
 //
 
-#import "GKPresentationAnimation.h"
+#import "GKDropDownPresentationAnimation.h"
 
-@implementation GKPresentationAnimation
+@implementation GKDropDownPresentationAnimation
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        _isPresenting = NO;
-        _duration = 0.5f;
-    }
-    return self;
-}
-- (instancetype)initWithIsPresenting:(BOOL)isPresenting duration:(CGFloat)duration {
-    self = [super init];
-    if (self) {
-        _isPresenting = isPresenting;
-        
-        _duration = duration;
-    }
-    return self;
-}
+
 
 #pragma mark - UIViewControllerAnimatedTransitioning protocol method
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
